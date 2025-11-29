@@ -1,0 +1,185 @@
+================================================================================
+CS535 HOMEWORK #4 - QUICK START GUIDE
+Fashion MNIST Classification with Deep Learning
+================================================================================
+
+STEP 1: SETUP ENVIRONMENT
+--------------------------
+Run ONE of these methods:
+
+Method A - Automated (Recommended for Linux/Mac):
+    ./setup_environment.sh
+
+Method B - Manual:
+    python3 -m venv cs535_hw4_env
+    source cs535_hw4_env/bin/activate    # Linux/Mac
+    # OR: cs535_hw4_env\Scripts\activate  # Windows
+    pip install --upgrade pip
+    pip install -r requirements.txt
+
+
+STEP 2: ACTIVATE ENVIRONMENT
+-----------------------------
+    source cs535_hw4_env/bin/activate    # Linux/Mac
+    # OR: cs535_hw4_env\Scripts\activate  # Windows
+
+
+STEP 3: LAUNCH JUPYTER NOTEBOOK
+--------------------------------
+    jupyter notebook
+
+    Your browser will open automatically.
+    If not, copy the URL from terminal (looks like: http://localhost:8888/...)
+
+
+STEP 4: OPEN THE NOTEBOOK
+--------------------------
+    In Jupyter web interface, click:
+    CS535_HW4_MNIST_Fashion_Classification.ipynb
+
+
+STEP 5: UPDATE STUDENT NAME
+----------------------------
+    *** IMPORTANT ***
+    Edit the first markdown cell and add your name(s)
+    Replace: [Your Name Here]
+    With: Your actual name(s)
+
+
+STEP 6: RUN THE NOTEBOOK
+-------------------------
+    Option A - Run all cells at once:
+        Menu: Cell → Run All
+
+    Option B - Run cells individually:
+        Click on each cell and press Shift+Enter
+
+
+STEP 7: REVIEW OUTPUTS
+----------------------
+    The notebook will:
+    ✓ Load Fashion MNIST dataset (60,000 training + 10,000 test images)
+    ✓ Train baseline model (10 epochs)
+    ✓ Generate confusion matrix with analysis
+    ✓ Plot learning curves over epochs
+    ✓ Train 12 models with varying data sizes (takes 10-15 minutes)
+    ✓ Plot learning curves over data volume
+    ✓ Provide detailed interpretations
+
+
+STEP 8: EXPORT FOR SUBMISSION
+------------------------------
+    In Jupyter, go to: File → Download as → PDF via HTML
+    Or: File → Download as → HTML
+
+    From command line:
+        jupyter nbconvert --to html CS535_HW4_MNIST_Fashion_Classification.ipynb
+
+
+STEP 9: SUBMIT TO D2L
+---------------------
+    Submit BOTH files:
+    ✓ CS535_HW4_MNIST_Fashion_Classification.ipynb
+    ✓ CS535_HW4_MNIST_Fashion_Classification.pdf (or .html)
+
+
+================================================================================
+ALTERNATIVE: USE GOOGLE COLAB (No setup required!)
+================================================================================
+
+1. Go to: https://colab.research.google.com/
+2. Upload notebook: File → Upload notebook
+3. Select: CS535_HW4_MNIST_Fashion_Classification.ipynb
+4. Update student name in first cell
+5. Run all: Runtime → Run all
+6. Download results: File → Download → .ipynb and .pdf
+
+
+================================================================================
+FILE STRUCTURE
+================================================================================
+
+CS535_HW4_MNIST_Fashion_Classification.ipynb  - Main assignment notebook
+requirements.txt                                - Python dependencies
+setup_environment.sh                            - Auto-setup script
+README.md                                       - Detailed documentation
+COMMANDS.md                                     - Command reference
+QUICKSTART.txt                                  - This file
+
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+Problem: "ModuleNotFoundError"
+Solution: pip install -r requirements.txt
+
+Problem: "Kernel died" or "Out of memory"
+Solution: Restart kernel (Kernel → Restart) or use Google Colab
+
+Problem: Task 4 takes too long
+Solution: This is normal - it trains 12 models. Takes 10-15 minutes.
+
+Problem: Can't export to PDF
+Solution: Use HTML export instead or use Google Colab
+
+Problem: GPU not detected (optional - not required)
+Solution: pip install tensorflow[and-cuda]
+
+
+================================================================================
+EXPECTED RUNTIME
+================================================================================
+
+Task 1: Baseline Model          ~2-3 minutes
+Task 2: Confusion Matrix        ~30 seconds
+Task 3: Learning Curves         ~0 seconds (uses data from Task 1)
+Task 4: Data Volume Experiment  ~10-15 minutes (trains 12 models)
+
+Total: ~15-20 minutes
+
+
+================================================================================
+PACKAGE VERSIONS
+================================================================================
+
+Python:         3.8+
+TensorFlow:     2.13+
+NumPy:          1.24+
+Matplotlib:     3.7+
+Scikit-learn:   1.3+
+Jupyter:        1.0+
+Pandas:         2.0+
+Seaborn:        0.12+
+
+
+================================================================================
+NEED HELP?
+================================================================================
+
+Check these files:
+- README.md      - Comprehensive documentation
+- COMMANDS.md    - All useful commands
+- requirements.txt - Package dependencies
+
+For TensorFlow issues: https://www.tensorflow.org/install
+For Jupyter issues: https://jupyter.org/install
+
+
+================================================================================
+SUBMISSION CHECKLIST
+================================================================================
+
+Before submitting:
+[ ] Student name(s) added to notebook
+[ ] All cells executed successfully
+[ ] All outputs visible
+[ ] Visualizations display correctly
+[ ] Confusion matrix interpretation complete
+[ ] Both .ipynb and .pdf/.html files ready
+[ ] Files uploaded to D2L before deadline
+
+
+================================================================================
+Good luck with your assignment!
+================================================================================
