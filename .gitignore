@@ -37,3 +37,18 @@ Thumbs.db
 *.ckpt
 models/
 checkpoints/
+
+# Generated outputs
+outputs/
+*.png
+*.jpg
+*.jpeg
+
+# TensorFlow/Keras
+*.keras
+*.h5
+*.hdf5
+
+# Logs
+logs/
+*.log
